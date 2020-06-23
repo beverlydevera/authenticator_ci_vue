@@ -1,5 +1,3 @@
-<?= sesdata('username');?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,6 +14,8 @@
 </head>
 <body>
 <div id="<?=$vueid?>">
+<?= sesdata('username');?>
+<a href="<?=base_url('Users/logout')?>" style="float:right;">Logout</a>
     <h3 style="text-align:center;">- - - LIST OF USERS - - -</h3>
     <table v-if="userslist!=''">
         <thead>
