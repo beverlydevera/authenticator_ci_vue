@@ -33,6 +33,5 @@ var login = new Vue({
             }
         },
     }, mounted: function () {
-        //a
     },
 })

@@ -9,6 +9,7 @@ class Login_model extends CI_Model
     }
     
     public function checkUserAuth($username="",$password=""){
+        //check in database
         if($username == 'testuser' && $password == 'password'){
             return true;
         }else{
