@@ -9,7 +9,6 @@ class Main extends CI_Model
     }
     
     // public function get(){
-
     // }
 }
 

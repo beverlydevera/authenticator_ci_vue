@@ -28,16 +28,11 @@ function sesdata($index){
 	return $_CI->session->userdata($index);
 }
 
-function checkLogin($type = false){
+function checkLogin($type=false){
 	$_CI =& get_instance();
-	if ($type) {
+	if($type){
 		if (!empty($_CI->session->userdata('loggedin'))) {
-			$status = getUser('status',array('user_id'=>sesdata('id')),'row')->status;
-			if ($status == 0) {
-				redirect(base_url('users/inactivestat'),'refresh');
-			}else{
-				redirect(base_url('dashboard/index'),'refresh');
-			}
+			redirect(base_url('users/index'),'refresh');
 		}
 	}else{
 		if (empty($_CI->session->userdata('loggedin'))) {
