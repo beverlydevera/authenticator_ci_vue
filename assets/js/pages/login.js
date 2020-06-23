@@ -23,6 +23,11 @@ var login = new Vue({
                             setTimeout(function(){
                                 location.reload();
                             }, 500);
+                        }else{
+                            login.userdata = {
+                                username: "",
+                                password: ""
+                            }
                         }
                     })
                     .catch(function (error) {
