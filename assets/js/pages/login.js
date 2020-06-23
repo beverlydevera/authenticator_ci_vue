@@ -2,8 +2,8 @@ var login = new Vue({
     el: '#login_page',
     data: {
         userdata: {
-            username: "testuser",
-            password: "password",
+            username: "",
+            password: "",
         },
     },
     methods: {
