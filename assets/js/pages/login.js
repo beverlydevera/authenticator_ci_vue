@@ -14,7 +14,7 @@ var login = new Vue({
                 axios.post(urls, ldata)
                     .then(function (e) {
                         // console.log(e);
-                        var success = e.data.success ? 'success':'error';
+                        var success = e.data.result==true ? 'success':'error';
                         Toast.fire({
                             type: success,
                             title: e.data.message

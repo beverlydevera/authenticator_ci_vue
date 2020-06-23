@@ -8,7 +8,7 @@ var users = new Vue({
             var urls = "https://jsonplaceholder.typicode.com/users";
             axios.get(urls)
                 .then(function (e) {
-                    console.log(e);
+                    // console.log(e);
                     users.userslist = e.data;
                 })
                 .catch(function (error) {
